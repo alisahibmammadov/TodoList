@@ -42,3 +42,5 @@ addBtn.addEventListener("click", () => {
     });
   }
 });
+
+// Salam
