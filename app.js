@@ -6,6 +6,7 @@ addBtn.addEventListener("click", () => {
   if (input.value.length > 0) {
     const divList = document.createElement("div");
     divList.classList.toggle("list");
+    divList.style.animation = "animate1 1s";
     todoSection.appendChild(divList);
 
     const pList = document.createElement("p");
@@ -37,7 +38,7 @@ addBtn.addEventListener("click", () => {
       divList.style.background = "rgba(0,0,0,.1)";
     });
     deleteBtn.addEventListener("click", () => {
-      todoSection.removeChild(divList);
+      return todoSection.removeChild(divList);
     });
   }
 });

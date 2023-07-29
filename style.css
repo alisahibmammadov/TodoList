@@ -75,8 +75,8 @@ body {
   gap: 10px;
   align-items: center;
   width: 100%;
+  transition-delay: 1s;
 }
-
 .list {
   display: flex;
   align-items: center;
@@ -86,6 +86,17 @@ body {
   box-shadow: 0 0 2px #3c7bcb;
   padding: 0 10px;
 }
+
+@keyframes animate1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
 .info {
   font-size: 1.2rem;
   letter-spacing: 1px;
